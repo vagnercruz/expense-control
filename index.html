@@ -10,19 +10,20 @@
   <form>
     <div>
       <div><label>E-mail</label></div>
-      <input type="email" name="email" placeholder="your@email.com">
+      <input type="email" name="email" oninput="validateFields()" id="email" placeholder="your@email.com">
     </div>
       <div><label>Password</label></div>
       <input type="password" name="password" placeholder="your-password">
     <div>
-      <button type="button" class="clear">Forgot your password?</button>
+      <button type="button" class="clear" id="recover-password-button" disabled>Forgot your password?</button>
     </div>
     <div>
-      <button type="button" class="solid">Login</button>
+      <button type="button" class="solid" disabled>Login</button>
     </div>
     <div>
       <button type="button" class="outline">Register</button>
     </div>   
   </form>
 </body>
+<script src="index.js"></script>
 </html>
